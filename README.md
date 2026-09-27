@@ -1,4 +1,4 @@
-# Kalya Sai Raju — Portfolio
+# Kalyan Sai Raju — Portfolio
 
 Website: https://kalyansairaju.github.io/
 
