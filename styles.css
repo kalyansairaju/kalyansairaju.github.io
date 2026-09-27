@@ -213,3 +213,26 @@ footer{flex-direction:column;gap:8px}
 .contact-action{font-size:.875rem;color:#e8a7c1;margin-top:8px}
 @media(max-width:650px){.contact-details{grid-template-columns:minmax(0,1fr)}.contact-card{padding:22px}.nav{gap:0 12px}.nav a{min-height:44px}.contact-value{font-size:1rem}}
 @media(prefers-reduced-motion:reduce){.contact-card{transition:none}}
+
+/* Editorial introduction: larger portrait and concise professional context. */
+.hero-editorial{min-height:790px;padding:165px 32px 90px;text-align:left;overflow:hidden}
+.hero-editorial::before{inset:0;transform:none;width:auto;height:auto;border-radius:0;box-shadow:none;background:radial-gradient(ellipse at 80% 28%,#65152b45,transparent 53%)}
+.hero-editorial::after{opacity:.45}
+.hero-editorial .hero-inner{width:100%;max-width:1060px;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);align-items:center;gap:70px}
+.hero-editorial h1{font-size:clamp(4rem,6.5vw,6.2rem);line-height:1.02;letter-spacing:-.055em;margin:0 0 24px}
+.hero-editorial h1 .name-period{display:inline;color:#f3789b}
+.hero-editorial .eyebrow{margin-bottom:26px;font-size:.75rem;line-height:1.8}
+.hero-editorial .role{font-size:1.2rem;line-height:1.55;color:#f0dce2;margin:0 0 21px}
+.hero-editorial .lead{margin:0;max-width:540px;font-size:1.0625rem;color:#e2d8df;line-height:1.75}
+.intro-detail{color:var(--muted);font-size:1rem;line-height:1.8;margin:14px 0 0;max-width:550px}
+.hero-editorial .actions{justify-content:flex-start;margin-top:28px;gap:12px}
+.hero-editorial .button{padding:12px 19px;font-size:.8125rem}
+.intro-photo{margin:0;position:relative;min-width:0}
+.hero-editorial .portrait{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:20px;margin:0;border:1px solid #66424c;box-shadow:0 20px 65px #0008}
+.intro-photo figcaption{display:flex;flex-direction:column;gap:5px;margin-top:22px;padding-left:16px;border-left:2px solid #c45779}
+.intro-photo figcaption span:first-child{font-size:1rem;color:#f3e9ee}
+.intro-photo figcaption span:last-child{font-size:.8125rem;color:#bdaab3;letter-spacing:.04em}
+@media(max-width:900px){.hero-editorial .hero-inner{gap:35px;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}.hero-editorial{padding-inline:28px}.hero-editorial h1{font-size:4.7rem}}
+@media(max-width:650px){.hero-editorial{padding:155px 24px 64px;min-height:0}.hero-editorial .hero-inner{grid-template-columns:minmax(0,1fr);gap:38px}.intro-photo{grid-row:1;width:min(100%,280px);justify-self:center}.intro-photo figcaption{display:none}.hero-editorial .portrait{border-radius:18px}.hero-editorial h1{font-size:4.4rem}.hero-editorial .eyebrow{font-size:.6875rem;letter-spacing:.13em;margin-bottom:18px}.hero-editorial .actions{align-items:stretch;flex-direction:column}.hero-editorial .button{width:100%;font-size:.875rem}.hero-editorial .role{font-size:1.125rem}}
+@media(prefers-reduced-motion:reduce){.hero-editorial .reveal{animation:none}}
+@media(min-width:431px){.nav{width:max-content}}
